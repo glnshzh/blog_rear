@@ -68,5 +68,8 @@
             </plugin>
         </plugins>
     </build>
-
+    <packaging>pom</packaging>
+    <modules>
+        <module>user-maven-module</module>
+    </modules>
 </project>
