@@ -1,0 +1,17 @@
+spring:
+        datasource: # ????????
+                url: jdbc:mysql://124.71.174.130:3306/blog_user?characterEncoding=UTF-8&useSSL=false&useUnicode=true&serverTimezone=UTC
+                username: root
+                password: root
+        mybatis-plus:
+                # ??Mapper????
+                mapper-locations: classpath:../mapper/*.xml
+                # ????????
+                typeAliasesPackage: com.example.demo.entity
+                # ????????
+                global-config:
+                        db-config:
+                                logic-delete-field: deleted
+                                logic-delete-value: 1
+                                logic-not-delete-value: 0
+
